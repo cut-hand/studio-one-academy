@@ -1,0 +1,7 @@
+node_modules/
+dist/assets/*.zip
+dist/assets/*.wav
+*.tar.gz
+*.log
+qa/
+.DS_Store

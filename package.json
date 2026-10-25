@@ -1,0 +1,13 @@
+{
+  "name": "studio-one-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Studio One 中文学习网站，附原创练习音频与 MIDI",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}

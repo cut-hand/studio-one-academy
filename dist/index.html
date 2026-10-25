@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f6f9">
+  <meta name="description" content="Studio One 中文学习手册：从入门到高阶，逐步实践、原创音频与 MIDI 下载、完整目录和学习进度。">
+  <title>Studio One · 声音研习室</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <div class="ambient" aria-hidden="true"></div>
+  <aside id="sidebar" class="sidebar glass" aria-label="课程目录">
+    <a href="#/" class="brand"><span class="brand-icon" aria-hidden="true">◒</span><span>声音研习室<small>STUDIO ONE ACADEMY</small></span></a>
+    <div class="side-label">你的音乐，从这里开始</div>
+    <nav class="main-nav"><a href="#/" data-nav="home"><span>⌂</span>学习总览</a><a href="#/library" data-nav="library"><span>≋</span>完整课程<span class="count">30</span></a><a href="#/materials" data-nav="materials"><span>↓</span>案例素材库</a></nav>
+    <div class="side-label directory-label">学习路径 <span>5 个阶段</span></div>
+    <nav id="course-nav" class="course-nav" aria-label="分级课程"></nav>
+    <div class="side-bottom"><div class="progress-heading"><span>我的学习进度</span><b id="progress-count">0 / 30</b></div><div class="progress-track"><div id="progress-fill"></div></div><p>完成一课，就离作品近一步。</p><a href="#/guide">使用指南与参考来源 ↗</a></div>
+  </aside>
+  <div id="shade" class="shade" hidden></div>
+  <div class="workspace">
+    <header class="topbar"><button id="menu-toggle" class="icon-button mobile-menu" aria-label="打开课程目录" aria-expanded="false">☰</button><div class="breadcrumb" id="breadcrumb">研习室 <span>/</span> 学习总览</div><div class="top-actions"><button class="search-trigger glass" id="search-open"><span>⌕</span> 搜索课程与知识点 <kbd>Ctrl K</kbd></button><button id="theme-toggle" class="icon-button glass" aria-label="切换深浅色主题">◐</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer><span>STUDIO ONE ACADEMY</span><span>用耳朵判断，用作品验证。</span><a href="#/guide">独立学习项目 · 资料与许可</a></footer>
+  </div>
+  <dialog id="search-dialog"><div class="search-box"><label for="search-input">搜索研习室</label><button id="search-close" class="icon-button" aria-label="关闭搜索">×</button><input id="search-input" type="search" placeholder="试试「压缩」「录音」「和弦」…" autocomplete="off"><div id="search-results" aria-live="polite"></div></div></dialog>
+  <div id="toast" role="status"></div>
+  <script src="curriculum.js"></script><script src="app.js"></script>
+</body>
+</html>

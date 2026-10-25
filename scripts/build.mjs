@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const curriculum=JSON.parse(fs.readFileSync(path.join(root,'content/curriculum.json'),'utf8'));
+fs.mkdirSync(path.join(root,'dist'),{recursive:true});
+fs.writeFileSync(path.join(root,'dist/curriculum.js'),`window.CURRICULUM = ${JSON.stringify(curriculum,null,2)};\n`);
+execFileSync(process.execPath,[path.join(root,'scripts/generate-assets.mjs')],{stdio:'inherit'});
+execFileSync(process.execPath,[path.join(root,'scripts/check.mjs')],{stdio:'inherit'});

@@ -1,0 +1,66 @@
+{
+  "rhythm": {
+    "title": "100 BPM 节奏练习包",
+    "file": "assets/rhythm.zip",
+    "description": "底鼓、军鼓、踩镲分轨与节奏合成；练习剪辑、循环与量化。",
+    "bpm": 100,
+    "key": "C major / A minor",
+    "duration": 19.2,
+    "license": "CC0-1.0",
+    "files": [
+      "kick.wav",
+      "snare.wav",
+      "hats.wav",
+      "rhythm-loop.wav",
+      "README.txt"
+    ]
+  },
+  "vocal": {
+    "title": "合成人声式信号练习包",
+    "file": "assets/vocal.zip",
+    "description": "明确为合成信号，含干净、噪声及音量不均版本；用于编辑、降噪与音量整理。",
+    "bpm": 100,
+    "key": "C major / A minor",
+    "duration": 19.2,
+    "license": "CC0-1.0",
+    "files": [
+      "synthetic-voice-clean.wav",
+      "synthetic-voice-noisy.wav",
+      "synthetic-voice-uneven.wav",
+      "README.txt"
+    ]
+  },
+  "mix": {
+    "title": "八小节混音分轨包",
+    "file": "assets/mix.zip",
+    "description": "鼓、贝斯、和弦、主旋律与参考合成，统一起点。",
+    "bpm": 100,
+    "key": "C major / A minor",
+    "duration": 19.2,
+    "license": "CC0-1.0",
+    "files": [
+      "drums.wav",
+      "bass.wav",
+      "chords.wav",
+      "lead.wav",
+      "reference-mix.wav",
+      "README.txt"
+    ]
+  },
+  "midi": {
+    "title": "和弦与旋律 MIDI 包",
+    "file": "assets/midi.zip",
+    "description": "C–Am–F–G 和弦、旋律、贝斯与 GM 鼓 MIDI，导入后自行加载音源。",
+    "bpm": 100,
+    "key": "C major / A minor",
+    "duration": 19.2,
+    "license": "CC0-1.0",
+    "files": [
+      "chords.mid",
+      "melody.mid",
+      "bass.mid",
+      "drums.mid",
+      "README.txt"
+    ]
+  }
+}
